@@ -25,7 +25,7 @@ The script takes two arguments:
 Example:
 ~~~~
 > chmod +x ./createtiles.sh
-> ./createtiles.sh test.svg 250
+> ./createtiles.sh example.svg 250
 ~~~~
 
 and the output:
@@ -53,7 +53,7 @@ sw = map.unproject([0, 2048], map.getMaxZoom());
 ne = map.unproject([2048, 0], map.getMaxZoom());
 map.setMaxBounds(new L.LatLngBounds(sw, ne));
 
-L.tileLayer('/img/fm4/example/{z}/map_{y}_{x}.png').addTo(map);
+L.tileLayer('/example/{z}/map_{y}_{x}.png').addTo(map);
 ~~~~
 
 ## Parameters in the script
