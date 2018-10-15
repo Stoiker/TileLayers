@@ -6,7 +6,7 @@ name="$(cut -d '.' -f1 <<<"$filename")"
 
 # Parameters
 #------------------------
-square=128
+square=256
 bckcolor="grey"
 zoomlevel=7
 annotate="Testing"
